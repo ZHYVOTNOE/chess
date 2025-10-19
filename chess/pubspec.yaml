@@ -11,12 +11,15 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.8
-  flutter_svg: ^2.0.7
+  icons_plus: ^4.0.0
+  flutter_svg: ^2.0.9
+  flutter_vector_icons: ^2.0.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.4
 
 flutter:
   uses-material-design: true
@@ -24,8 +27,25 @@ flutter:
   assets:
     - assets/fonts/
     - assets/pieces/
+    - assets/images/
+    - assets/logo/
 
   fonts:
     - family: NotoSymbols
       fonts:
         - asset: assets/fonts/NotoSansSymbols2-Regular.ttf
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo/logo.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/logo/logo.png"
+  windows:
+    generate: true
+    image_path: "assets/logo/logo.png"
+  macos:
+    generate: true
+    image_path: "assets/logo/logo.png"
